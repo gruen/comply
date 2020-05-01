@@ -20,6 +20,7 @@ RUN curl -J -L -o /tmp/comply.tgz https://github.com/gruen/comply/releases/downl
   && mv ./comply-v1.4.1-paging-fix-dev-linux-amd64 /usr/local/bin/comply
 
 
+ADD source /source
 WORKDIR /source
 
 ENTRYPOINT ["/bin/bash"]
